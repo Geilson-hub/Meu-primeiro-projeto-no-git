@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    /* fonte das letras */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black
+}
+
+header {
+    margin: 44px 0 144px 76px;
+}
+
+.sempre-header {
+    font-weight: 400px;
+    font-size: 24px;
+    line-height: 29px;
+    cursor: pointer;
+    color: #c0c0c0;
+    margin-left: 50px;
+}
+
+.slider-container {
+    width: 568px;
+    height: 500px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin: 125px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.botao1 {
+    background: linear-gradient(#5e0000, #c52206);
+    color: #ffff;
+    border-radius: 76.5px;
+    width: 130px;
+    height: 41px;
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    cursor: pointer;
+
+}
+
+.butao2 {
+    background: linear-gradient(#5e0000, #c52206);
+    color: #ffff;
+    border-radius: 76.5px;
+    display: inline-block;
+    width: 230px;
+    height: 41px;
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 41px;
+    text-align: center;
+
+}
+
+
+section {
+    display: inline-block;
+    margin-left: 86px;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 122px;
+    color: #c0c0c0;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 71px;
+    color: #c0c0c0;
+}
+
+p {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    width: 515px;
+    margin-top: 32px;
+    margin-bottom: 65px;
+    color: #c0c0c0;
+}
+
+.slide {
+    width: 568px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    /* Começa invisível */
+    transition: opacity 1s ease-in-out;
+    object-fit: cover;
+}
+
+.slide.active {
+    opacity: 1;
+    /* Torna a foto ativa visível */
+}
+
+
+@media screen and (max-width: 900px) {
+    header {
+        display: none;
+    }
+}
+

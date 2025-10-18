@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>O mais forte dos hashiras</title>
+</head>
+
+<body>
+    <header>
+        <a class="sempre-header">Inicio</a>
+        <a class="sempre-header">Produto</a>
+        <a class="sempre-header">Blog</a>
+        <a class="sempre-header">Conecte-se</a>
+        <button class="botao1">inscreva-se</button>
+
+    </header>
+
+    <main>
+        <div class="slider-container">
+
+            <img src="./img/senemi.jpg" alt="Sanemi-Shinazugawa" class="slide active">
+            <img src="./img/senemi.jpeg" alt="Sanemi-Shinazugawa" class="slide">
+            <img src="./img/sanemi-2.webp" alt="Sanemi-Shinazugawa" class="slide">
+            <img src="./img/sanemi-3.jpg" alt="Sanemi-Shinazugawa" class="slide">
+            <img src="./img/sanemi-4.webp" alt="Sanemi-Shinazugawa" class="slide">
+            <img src="./img/sanemi-5.jpg" alt="Sanemi-Shinazugawa" class="slide">
+
+        </div>
+
+        <section>
+            <h1>Sinta Raiva</h1>
+            <h2>Seje forte</h2>
+            <P>Os fracos não têm direitos nem escolhas. A raiva se torna a força inabalável que move seus membros.
+                Fraqueza e promessas vazias não podem proteger sua irmã ou encontrar uma cura para ela. E certamente não
+                podem vingar sua família.</P>
+            <a href="https://www.youtube.com/watch?v=ToL-Z0gpnXQ&list=RDToL-Z0gpnXQ&start_radio=1" class="butao2"
+                target="_blank" rel="noopener noreferrer">
+                O mais forte</a>
+
+
+        </section>
+
+    </main>
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+        const intervalTime = 5000;
+        function nextSlide() {
+            if (slides.length === 0) return;
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+        setInterval(nextSlide, intervalTime);
+
+    </script>
+</body>
+
+</html>
